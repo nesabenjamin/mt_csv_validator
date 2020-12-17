@@ -104,7 +104,7 @@ class ValidateBackground implements ShouldQueue
             ->groupBy('errors', 'attribute')
             ->get();
 
-        Mail::to('nesa@gmail.com')->send( new sendEmail( $validationResult, $headerValidation, $empty) );      
+        Mail::to('charush@accubits.com')->send( new sendEmail( $validationResult, $headerValidation, $empty) );      
         
     }
 
