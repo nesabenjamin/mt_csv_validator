@@ -13,6 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ConfigurationController@index');
+
+
+
+Route::get('upload', 'DocumentController@index')->name('upload');
+Route::get('configure', 'ConfigurationController@index')->name('configure');
+Route::post('configure', 'ConfigurationController@store')->name('configure.post');
+Route::post('store', 'DocumentController@store')->name('store');
+
+
+Route::get('getFields', 'ConfigurationController@getFields');
+Route::get('documentation', 'DocumentController@documentation')->name('documentation');
