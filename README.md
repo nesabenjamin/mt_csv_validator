@@ -16,7 +16,7 @@ Laravel CSV Validator
     Update mailtrap credentials in env file
   </li>
   <li class="list-group-item">
-    Run ‘php artisan queue:work’ command. 
+    Set QUEUE_CONNECTION=database and Run ‘php artisan queue:work’ command. 
   </li>
 
   <li class="list-group-item">
